@@ -10,7 +10,7 @@ if ($language_id){ // in case we call the function of specific language_id
 }else{ // else we read the files from the session variable
 
 define('APP_DIR', '/var/www/perseas.net/web');	
-require(APP_DIR.'/language/'.$_SESSION["LANGUAGE"].'.php');	
+require(APP_DIR.'/language/'.$_SESSION["LANGUAGE"].'.php');	// here I am using a directory for languages... named /language/
 
 	if (!$lang[$string]){ // if we can't find the string for translation we return the original string
 		return $string;  
